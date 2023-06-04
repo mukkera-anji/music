@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+   background-image: url(https://cdn.pixabay.com/photo/2016/12/14/12/13/violin-1906143_1280.jpg);
+   color: white;
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}.container{
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 20px white;
+    border-radius: 10%;
+
+}
+#singer,#song{
+    font-family: sans-serif;
+}
+#singer{
+    font-style: italic;
+    text-shadow: 2px 2px 20px black;
+}
+.controlls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+#forward,#backward,#play{
+    font-size: 30px;
+
+}
+#play{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+}
+#play:hover{
+color: black;
+background-color: white;
+transition: all 1s;
+}
+
+.progressbarcontainer{
+    width: 100%;
+    height: 4px;
+    
+    background-color: white;
+    border-radius: 2px;
+}
+.progressbar{
+   
+    height: 4px;
+    border: 1px solid orange;
+    background-color: orange;
+   
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+}
+#currenttime,#duration{
+    color: black;
+}
+@media screen and (max-width:600px) {
+    .container{
+        width: 250px;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    #forward,#backward,#play{
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
